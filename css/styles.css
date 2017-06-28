@@ -1,0 +1,33 @@
+body {
+  background-color: blue;
+}
+
+.center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#starfleet {
+  padding: 10%;
+  /*width: 50%;*/
+  animation-name: rotate;
+  animation-duration: .5s;
+  animation-iteration-count: infinite;
+}
+
+#klingon {
+  padding: 10%;
+  /*width: 50%;*/
+  animation-name: rotate;
+  animation-duration: .3s;
+  animation-iteration-count: infinite;
+}
+
+@keyframes rotate {
+  0% { width: 50%;}
+  25% { width: 100%;}
+  50% { width: 200%;}
+  75% { width: 100%;}
+  100% { width: 50%;}
+}
