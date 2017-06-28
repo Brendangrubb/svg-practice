@@ -1,5 +1,8 @@
 body {
-  background-color: blue;
+}
+
+img:hover {
+  cursor: pointer;
 }
 
 .center {
@@ -8,26 +11,87 @@ body {
   align-items: center;
 }
 
+.no-visibility {
+  visibility: hidden;
+}
+
+
+
+
 #starfleet {
   padding: 10%;
   /*width: 50%;*/
-  animation-name: rotate;
-  animation-duration: .5s;
+}
+
+.starfleet-bg {
+  background-color: blue;
+}
+
+.animation-one {
+  animation-name: rotate-one;
+  animation-duration: 2s;
   animation-iteration-count: infinite;
 }
+
+@keyframes rotate-one {
+  0% { transform: scale(0);  width: 50%; margin-left: 0%}
+  40% { transform: scale(1); width: 100%; margin-left: 25%}
+  60% { transform: scale(1); width: 100%; margin-left: 25%}
+  100% { transform: scale(0); width: 50%; margin-left: 0%}
+}
+
+.feature-animation-one {
+  animation-name: feature-one;
+  animation-duration: 5s;
+  animation-iteration-count: infinite;
+}
+
+@keyframes feature-one {
+  0% { transform: scale(1);  height: 100vh; margin-left: 100%; transform: scale(10);}
+  40% { transform: scale(1); height: 100vh; margin-left: 100%; transform: scale(3);}
+  60% { transform: scale(1); height: 100vh; margin-left: 100%; transform: scale(3);}
+  80% { transform: scale(1); height: 100vh; margin-left: 100%; transform: scale(3);}
+  90% { transform: scale(1); height: 100vh; margin-left: 100%; transform: scale(10); -webkit-transform: rotate(360deg); }
+  100% { transform: scale(1); height: 100vh; margin-left: 100%; transform: scale(10);}
+}
+
+
+
 
 #klingon {
   padding: 10%;
   /*width: 50%;*/
-  animation-name: rotate;
-  animation-duration: .3s;
+}
+
+.klingon-bg {
+  background-color: grey;
+}
+
+.animation-two {
+  animation-name: rotate-two;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+  animation-delay: 1s;
+}
+
+@keyframes rotate-two {
+  0% { transform: scale(0);  width: 50%; margin-left: 0%}
+  40% { transform: scale(1); width: 150%; margin-right: 25%}
+  60% { transform: scale(1); width: 150%; margin-right: 25%}
+  100% { transform: scale(0); width: 50%; margin-left: 0%}
+}
+
+.feature-animation-two {
+  animation-name: feature-two;
+  animation-duration: 5s;
   animation-iteration-count: infinite;
 }
 
-@keyframes rotate {
-  0% { width: 50%;}
-  25% { width: 100%;}
-  50% { width: 200%;}
-  75% { width: 100%;}
-  100% { width: 50%;}
+@keyframes feature-two {
+  0% { transform: scale(1);  height: 100vh; margin-right: 100%; transform: scale(10);}
+  40% { transform: scale(1); height: 100vh; margin-right: 100%; transform: scale(3);}
+  60% { transform: scale(1); height: 100vh; margin-right: 100%; transform: scale(3);}
+  80% { transform: scale(1); height: 100vh; margin-right: 100%; transform: scale(3);}
+  90% { transform: scale(1); height: 100vh; margin-right: 100%; transform: scale(10); -webkit-transform: rotate(360deg); }
+  100% { transform: scale(1); height: 100vh; margin-right: 100%; transform: scale(10);}
 }
